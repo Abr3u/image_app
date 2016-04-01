@@ -5,7 +5,10 @@ source 'https://rubygems.org'
 gem 'rails', '4.2.6'
 gem 'devise'
 gem 'bootstrap-sass', '~> 3.3.6'
-gem "paperclip", "~> 3.5.3"
+gem 'carrierwave'
+gem 'fog'
+gem 'mini_magick'
+gem 'rmagick'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
