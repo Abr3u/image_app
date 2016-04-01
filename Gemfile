@@ -8,7 +8,6 @@ gem 'bootstrap-sass', '~> 3.3.6'
 gem 'carrierwave'
 gem 'fog'
 gem 'mini_magick'
-gem 'rmagick'
 # Use sqlite3 as the database for Active Record
 gem 'sqlite3'
 # Use SCSS for stylesheets
