@@ -37,6 +37,7 @@ GEM
       minitest (~> 5.1)
       thread_safe (~> 0.3, >= 0.3.4)
       tzinfo (~> 1.1)
+    acts_as_votable (0.10.0)
     arel (6.0.3)
     autoprefixer-rails (6.3.5)
       execjs
@@ -275,6 +276,9 @@ GEM
     sdoc (0.4.1)
       json (~> 1.7, >= 1.7.7)
       rdoc (~> 4.0)
+    simple_form (3.0.4)
+      actionpack (~> 4.0)
+      activemodel (~> 4.0)
     sprockets (3.5.2)
       concurrent-ruby (~> 1.0)
       rack (> 1, < 3)
@@ -308,6 +312,7 @@ PLATFORMS
   x86-mingw32
 
 DEPENDENCIES
+  acts_as_votable (~> 0.10.0)
   bootstrap-sass (~> 3.3.6)
   byebug
   carrierwave
@@ -320,6 +325,7 @@ DEPENDENCIES
   rails (= 4.2.6)
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
+  simple_form (~> 3.0.2)
   sqlite3
   turbolinks
   tzinfo-data

@@ -1,2 +1,12 @@
 <%= image_tag (@post.avatar_url.to_s), :class => "big_image" %>
-<%= @post.description %>
+<p><%= @post.description %></p>
+<p><%= @post.user.email %></p>
+
+<h2> <%= pluralize(@post.comments.count, "Comment") %> </h2>
+	
+	<% @comments.each do |comment| %>
+			<p>From: <%= comment.user.email %></p>
+			<p>--> <%= comment.content %></p>
+	<% end %>
+	
+<%= render "comments/form" %>
