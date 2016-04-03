@@ -2,6 +2,28 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+
+.column-left{ 	
+	float: left; 
+	width: 20%; 
+}
+.column-right{ 
+	float: right; 
+	width: 70%; 
+}
+.column-center{ 
+	display: inline-block; 
+	width: 10%; 
+}
+
+#like{
+	color: green;
+}
+
+#dislike{
+	color: red;
+}
+
 .big_image{
 	height: auto; 
     width: auto; 

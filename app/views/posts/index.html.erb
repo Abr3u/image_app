@@ -3,5 +3,10 @@
 	<%= link_to post_path(x) do %>
 		<%= image_tag (x.avatar_url.to_s), :class => "medium_image" %>
 	<% end %>
+	<div class="container">
+		<div class="column-left"><%= pluralize(x.comments.count, "comment") %></div>
+		<div class="column-center"><%= pluralize(x.get_likes.size, "like") %></div>
+		<div class="column-right"><%= pluralize(x.get_dislikes.size, "dislike") %></div>
+	</div>
 </div>
 <% end %>
