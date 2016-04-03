@@ -1,5 +1,7 @@
 <% @posts.each do |x| %>
-	<%= image_tag (x.avatar_url.to_s) %>
-	<br/>
-	<%= x.description %>
+<div class="medium_frame">
+	<%= link_to post_path(x) do %>
+		<%= image_tag (x.avatar_url.to_s), :class => "medium_image" %>
+	<% end %>
+</div>
 <% end %>
